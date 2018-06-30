@@ -43,6 +43,9 @@ done;
 # Wait for threads to finish
 wait
 
+if [ -e "readme.header" ]; then
+  cat readme.header > $README
+fi;
 
 COUNT=0
 TITLEBUFFER="|"
